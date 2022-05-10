@@ -117,7 +117,7 @@ const getAllTypes = async (req, res, next) => {
     res.send(allDiet)
 }
 
-//fvufuydgdfkdddjkbfhdsdhgfjfhdgh
+//fvufuydgdfkdddjkbfhdsdhgfjfhdghghd
 
 const postCreateRecipe = async (req, res, next) => {
     let {
