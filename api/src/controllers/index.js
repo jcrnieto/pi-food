@@ -66,7 +66,7 @@ const getIdRecipes = async (req, res, next) => {
      }]
      //console.log('estoy en infoid', idDbTotal)
      idDbTotal && res.send(idDbTotal)
-     
+     //fhfhdrgrgjfjdj
     }else{
     try{
     const apiInfo= await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=922adc339a584c67a03510db6e01cd48&addRecipeInformation=true&number=50`) 
