@@ -136,6 +136,7 @@
   .container-post{
     background-color: rgb(222, 241, 213) ;
     overflow: hidden;
+    height: 100vh;
   }
   .form-row-buttons {
     width:88%;
