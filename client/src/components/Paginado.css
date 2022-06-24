@@ -1,4 +1,4 @@
-.number{
+ .number{
     list-style-type: none;
     margin:0;
     display: inline-block;
@@ -12,7 +12,7 @@
     margin-left: 5px;
     margin-right: 5px;
  }
- 
+  
  .number a{
      padding:1px 10px;
      display: inline-block;
@@ -20,12 +20,10 @@
      text-decoration: none;
 }
 
-/*#paginador .number :hover{
-  transform:scale(2.0)
-}*/
+
 
  .number a:active {
     color: red;
   }
 
- 
+  

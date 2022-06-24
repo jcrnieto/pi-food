@@ -1,4 +1,14 @@
-.cards-container {
+ .container-general{
+    overflow: hidden;
+    height: 100vp;
+ }
+
+ .container-nav{
+    width: 100%;
+    height: 300px;
+ }
+ 
+ .cards-container {
    /*height: 510px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -8,17 +18,15 @@
     -webkit-box-pack: justify;
     justify-content: space-between;*/
    display: flex;
-   
-   /*flex-wrap: wrap;*/
+   flex-wrap: wrap;
    justify-content: space-around;
 }
 
-.link-receta {
-    text-decoration: none;
-}
-
-.link-receta :hover {
-    transform: scale(1.02);
+ .landing{
+    margin:0;
+    padding: 0;
+    height: 100vw;
+    overflow: hidden;
 }
 
 .cards-item {
@@ -28,6 +36,14 @@
     background-color: rgba(33, 155, 45, 0.4);
     border-radius: 10px;
     margin:10px
+}
+
+.link-receta {
+    text-decoration: none;
+}
+
+.link-receta :hover {
+    transform: scale(1.02);
 }
 
 .title-receta {
@@ -47,7 +63,53 @@
     height: 60px;
 }
 
-.spoonacularScore-receta{
+.boton-cargar-recetas {
+    box-shadow: 0px 10px 14px -7px #3dc21b;
+    background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+    background-color:#44c767;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:9px 19px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    border-color: #3dc21b;
+    /* margin-right: 30px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-color: #000; */
+}
+
+.link-nueva-receta {
+    box-shadow: 0px 10px 14px -7px #3dc21b;
+    background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+    background-color:#44c767;
+    border-radius:8px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:16px;
+    font-weight:bold;
+    padding:9px 19px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    margin-right: 25px;
+    /* margin-right: 30px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-color: #000; */
+}
+
+/*.spoonacularScore-receta{
     width: 100px;
     height: 100px;
     -moz-border-radius: 50%;
@@ -62,45 +124,11 @@
     border:2px solid black;
     margin-bottom: 10px;
     
-}
+}*/
 
 
-.link-nueva-receta {
-        box-shadow: 0px 10px 14px -7px #3dc21b;
-        background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
-        background-color:#44c767;
-        border-radius:8px;
-        display:inline-block;
-        cursor:pointer;
-        color:#ffffff;
-        font-family:Arial;
-        font-size:16px;
-        font-weight:bold;
-        padding:9px 19px;
-        text-decoration:none;
-        text-shadow:0px 1px 0px #2f6627;
-        margin-right: 30px;
-        border-top-width: 2px;
-        border-right-width: 2px;
-        border-bottom-width: 2px;
-        border-left-width: 2px;
-        border-color: #000;
-    }
-.boton-cargar-recetas {
-    box-shadow: 0px 10px 14px -7px #3dc21b;
-    background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
-    background-color:#44c767;
-    border-radius:8px;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family:Arial;
-    font-size:16px;
-    font-weight:bold;
-    padding:9px 19px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #2f6627;
-}
+
+
 
 .orden-alfabetico {
     background: rgb(77, 73, 73);
@@ -111,7 +139,7 @@
     padding: 5px;
     margin-top: 7px;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 22px;
 }
 
 .orden-puntuacion {
@@ -122,6 +150,7 @@
     font-size: 12px;
     padding: 5px;
     margin-top: 7px;
+    margin-right: 20px;
 }
 
 .dietas {
@@ -131,10 +160,17 @@
     color: #ffffff;
     font-size: 12px;
     padding: 5px;
-    margin-top: 7px; 
+    margin-top: 7px;
+    margin-right: 15px; 
 }
 
-@media (max-width: 480px){
+ @media (max-width: 480px){
+    .titulos{
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 12px;
+        padding-bottom: 15px;
+    }
      .link-nueva-receta{
         margin-bottom: 15px;
         margin-right: 6px;
@@ -152,35 +188,65 @@
         margin-bottom: 15px;
      }
      .dietas {
-        margin-bottom: 15px;
+        margin-bottom: 0;
      }
      .orden-alfabetico {
-        margin-bottom: 15px;
+        margin-bottom: 0;
      }
 
-     nav {
-         display: none;
-     }
+      nav {
+         margin-left: auto;
+         margin-right: auto;
+     } 
 
      .orden-puntuacion {
         margin-bottom: 15px;
      }
 
+     .container-cards{
+        margin-top: 60px;
+        /* padding-left: auto; */
+        padding-right: 30px;
+        background-color: rgb(222, 241, 213);
+        
+       
+     }
+
+     .container-input{
+        margin-top: 0;
+        margin-bottom: 0;
+     }
+
      .cards-container {
-         flex-direction: column;
+         /* flex-direction: column;
          display: flex;
          flex-wrap: wrap;
-         height: max-content;
-         width:70%;
+         overflow: hidden;
+         height: max-content; 
+         overflow-y: scroll;
+         overflow-x: hidden; */
+        
      }
 
      .cards-item {
          margin-left: 55px;
+     } 
+
+    
+     
+     .app{
+        height: max-content;
+        height:100vw;
+        overflow: hidden;
      }
 
-     .container-general {
-         /*height: max-content;*/
-         height:100vh;
-        /* width: 100%;*/
+     .container-nav{
+        height: 300px;
+       
      }
-}
+
+     .paginado{
+        padding-top: 15px;
+     }
+
+}  

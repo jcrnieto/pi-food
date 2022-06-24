@@ -64,6 +64,7 @@ export default function Home() {
 
   return (
     <div className="container-general">
+      <div className='container-nav'>
       <h1 className="titulos">Recetas Saludables</h1>
       <Link className="link-nueva-receta" to="/recipe">
         Crea tu propia receta
@@ -85,6 +86,9 @@ export default function Home() {
         <option value="asc1">Orden puntuacion ascendente</option>
         <option value="desc1">Orden puntuacion descendente</option>
       </select>
+      </div>
+
+      <div className='container-cards'>
       <Paginado
         paginacion={paginacion}
         recetasPorPagina={recetasPorPagina}
@@ -100,13 +104,14 @@ export default function Home() {
                   imagen={el.imagen ? el.imagen : el.image}
                   title={el.title}
                   diet={el.diet ? el.diet + ' ': el.diets.map((el) => el.name + ' ')}
-                  spoonacularScore= {el.spoonacularScore}
+                  // spoonacularScore= {el.spoonacularScore}
                   key={el.id}
                 />
               </Link>
             </div>
           );
         })): <div><h1>No se encontró receta</h1></div>}
+      </div>
       </div>
     </div>
   );

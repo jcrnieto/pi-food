@@ -71,7 +71,7 @@ export default function PostCreate() {
     dispatch(getDiet());
   }, [dispatch]);
   return (
-    <div>
+    <div className='container-post'>
       <h1>Crea tu propia receta</h1>
       <form className="form-post-create" onSubmit={(e) => handleSubmit(e)}>
         <div className="form-row">
