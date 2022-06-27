@@ -26,13 +26,12 @@
   }
 
 @media (max-width: 480px){
-    .landing{
-        background-color: rgb(222, 241, 213);
-        height: max-content;
-
-        }
+    
+   .titulos-bienvenido{
+      margin-top: 120px;
+   }
 
     .boton-landing{
-        margin-top: 120px;
+        margin-top: 80px;
     }
 }

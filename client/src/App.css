@@ -72,15 +72,14 @@
 
 .App-link {
   color: #61dafb;
-}
+}*/
 
 
 
 @media(max-width: 480px){
   .App {
     height: 100vh;
-    background-size: cover;
-    overflow: hidden;
+    
   }
   
-} */
+} 
