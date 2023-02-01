@@ -5,7 +5,7 @@ export function getRecipes(){
     try{
    
        var json = await axios.get("/recipes");
-      // console.log('actions', json.data)
+       //console.log('actions', json.data)
        return dispatch({
            type: 'GET_RECIPES',
            payload: json.data

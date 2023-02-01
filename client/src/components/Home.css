@@ -9,14 +9,6 @@
  }
  
  .cards-container {
-   /*height: 510px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    background-color: rgba(0,0,0,0.2);*/
-   /* display: inline;
-    flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    justify-content: space-between;*/
    display: flex;
    flex-wrap: wrap;
    justify-content: space-around;
@@ -108,27 +100,6 @@
     border-left-width: 2px;
     border-color: #000; */
 }
-
-/*.spoonacularScore-receta{
-    width: 100px;
-    height: 100px;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #b5d8b5;
-    display: inline;
-    font-size: 22px;
-    padding: 5px 5px;
-    border-color: #000;
-    color:#000;
-    border:2px solid black;
-    margin-bottom: 10px;
-    
-}*/
-
-
-
-
 
 .orden-alfabetico {
     background: rgb(77, 73, 73);

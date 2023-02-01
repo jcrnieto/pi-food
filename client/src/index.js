@@ -8,8 +8,8 @@ import {store} from './store';
 
 import axios from 'axios';
 
-
-axios.defaults.baseURL = "https://app-pifood.herokuapp.com"
+//h
+axios.defaults.baseURL = "https://backend-pi-food.onrender.com"
 
 ReactDOM.render(
   <Provider store={store}>

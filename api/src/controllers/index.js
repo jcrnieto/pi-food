@@ -19,7 +19,7 @@ const getDbInfo = async () => {
 const getAllRecipes = async (req, res, next) => {
     const {title} = req.query
     try{
-   const apiInfo= /*recetas; */await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true&number=10`)
+   const apiInfo= /*recetas; */await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true&number=15`)
    const infoGet = apiInfo.data.results.map(el=>{
   /* const infoGet = apiInfo.results.map(el=>{*/
        return{
@@ -28,9 +28,10 @@ const getAllRecipes = async (req, res, next) => {
            title: el.title,
            diet: el.diets.map(el=>el),
            spoonacularScore:el.spoonacularScore,
+           
         }
    }) 
-   //console.log('estoy en infoget', infoGet)
+   console.log('estoy en infoget', infoGet)
    const infoDb = await getDbInfo()
    const infoTotal = [...infoDb,...infoGet]
  
@@ -69,7 +70,7 @@ const getIdRecipes = async (req, res, next) => {
      //fhfhdrgrgjfjdj
     }else{
     try{
-    const apiInfo= await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true&number=10`) 
+    const apiInfo= await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true&number=15`) 
     const infoId= apiInfo.data.results.map(el=>{
   
         return{
